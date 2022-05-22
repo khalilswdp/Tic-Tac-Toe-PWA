@@ -1,3 +1,33 @@
-<router-outlet></router-outlet>
+<nb-layout>
 
-<app-board></app-board>
+  <nb-layout-header fixed>
+  <!-- Insert header here -->
+  </nb-layout-header>
+
+  <nb-layout-column>
+    <nb-layout>
+    
+      <nb-layout-header fixed>
+      <!-- Insert header here -->
+      </nb-layout-header>
+    
+      <nb-layout-column>
+        <router-outlet></router-outlet>
+        
+        <app-board></app-board>
+        
+      </nb-layout-column>
+    
+      <nb-layout-footer fixed>
+      <!-- Insert footer here -->
+      </nb-layout-footer>
+    
+    </nb-layout>
+    
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+  </nb-layout-footer>
+
+</nb-layout>
